@@ -12,7 +12,7 @@
 	    		<li>Coding</li>
 	    		<li>Photography</li>
 	    		<li>Tutoring</li>
-                <li>Book List</li>
+                <li><a href="books.php">Book List</a></li>
 	    	</ul>
 	    	<h2>The Arsh Advantage</h2>
     	</center>
@@ -29,19 +29,17 @@
     			<h3>Passion</h3>
     			<p>A passionate entrepreneur always go above and beyond without prodding, because it's not work for them. Arsh is truly passionate about the work he puts into your project. he loves adding more to the product than was originally requested for a satisfied customer.</p>
 			</div>
-            <div id="demo">
-            </div>
     	</div>
+		<div id="demo">
+        </div>
         <script>
-            var request = new XMLHttpRequest();
-            var redirect;
-            var proxy = 'https://cors-anywhere.herokuapp.com/';
-            request.onreadystatechange = function(){
-                redirect = request.getAllResponseHeaders();
-            }
-            request.open("GET", proxy + "https://openlibrary.org/isbn/9780590353403", true);
-            //request.setRequestHeader("Access-Control-Allow-Origin", "*")
-            request.send();
+            
+/*            fetch("https://openlibrary.org/isbn/9780590353403")
+            	.then(function(response){
+            		redirect = response.blob();
+            	});*/
+
+
         </script>
     </body>
 </html>
