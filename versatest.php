@@ -4,14 +4,14 @@
     	<link rel="stylesheet" href="site.css">
     	<script src="cart.js"></script>
     </head>
-    <body>
+    <body class="home">
     	<navbar>
     		<center>
 		    	<h1>
 		    		<a href="versatest.php">Arsh Agarwal</a>
 		    	</h1>
 		    	<ul>
-		    		<li>Coding</li>
+		    		<li><a href="coding.php">Coding</a></li>
 		    		<li><a href="photography.php">Photography</a></li>
 		    		<li><a href="tutoring.php">Tutoring</a></li>
 	                <li><a href="books.php">Book List</a></li>

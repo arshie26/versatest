@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" href="site.css">
 </head>
-<body>
+<body class="books">
 	<navbar>
 		<center>
 	    	<h1>
@@ -11,11 +11,11 @@
 	    	</h1>
 	    	<ul>
 	    		<li>Coding</li>
-	    		<li>Photography</li>
-	    		<li>Tutoring</li>
+	    		<li><a href="photography.php">Photography</a></li>
+	    		<li><a href="tutoring.php">Tutoring</a></li>
 	            <li><a href="books.php">Book List</a></li>
-	    	</ul>
-    	</center>	
+	    	</ul>	
+	    </center>	
 	</navbar>
 	<div style="display:flex;">
 		<div id="demo" style = "min-width:40vw; max-width: 50vw; padding-left: 10vw;">

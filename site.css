@@ -11,3 +11,29 @@ ul > li{
 .features{
 	max-width: 33vw;
 }
+
+.home{
+	background-image:url('inception-8-fit.jpg');
+	background-size: 100%;
+}
+
+.books{
+	background-image:url('inception-quotes.jpg');
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.coding{
+	background-image: url('inception-heist.jpg');
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.tutoring{
+	background-image:url('inception-8-fit.jpg');
+	background-size: 100%;	
+}
+
+a{
+	color:white;
+}
