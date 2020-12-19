@@ -1,13 +1,27 @@
 <!doctype html>
 <html>
 <head>
+	<link rel="stylesheet" href="site.css">
 </head>
 <body>
+	<navbar>
+		<center>
+	    	<h1>
+	    		<a href="versatest.php">Arsh Agarwal</a>
+	    	</h1>
+	    	<ul>
+	    		<li>Coding</li>
+	    		<li>Photography</li>
+	    		<li>Tutoring</li>
+	            <li><a href="books.php">Book List</a></li>
+	    	</ul>
+    	</center>	
+	</navbar>
 	<div style="display:flex;">
-		<div id="demo" style = "min-width:50vw; max-width: 50vw; padding-left: 10vw;">
+		<div id="demo" style = "min-width:40vw; max-width: 50vw; padding-left: 10vw;">
 				Fiction
 		</div>
-		<div id="nonf" style = "min-width:50vw; max-width: 50vw; padding-right: 10vw;">
+		<div id="nonf" style = "min-width:30vw; max-width: 50vw;padding-left: 10vw;">
 				Non Fiction
 		</div>
 	</div>

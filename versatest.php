@@ -2,18 +2,23 @@
 <html>
     <head>
     	<link rel="stylesheet" href="site.css">
+    	<script src="cart.js"></script>
     </head>
     <body>
+    	<navbar>
+    		<center>
+		    	<h1>
+		    		<a href="versatest.php">Arsh Agarwal</a>
+		    	</h1>
+		    	<ul>
+		    		<li>Coding</li>
+		    		<li><a href="photography.php">Photography</a></li>
+		    		<li><a href="tutoring.php">Tutoring</a></li>
+	                <li><a href="books.php">Book List</a></li>
+		    	</ul>	
+		    </center>
+    	</navbar>
     	<center>
-	    	<h1>
-	    		Arsh Agarwal
-	    	</h1>
-	    	<ul>
-	    		<li>Coding</li>
-	    		<li>Photography</li>
-	    		<li>Tutoring</li>
-                <li><a href="books.php">Book List</a></li>
-	    	</ul>
 	    	<h2>The Arsh Advantage</h2>
     	</center>
     	<div style="display: flex;">
@@ -30,8 +35,10 @@
     			<p>A passionate entrepreneur always go above and beyond without prodding, because it's not work for them. Arsh is truly passionate about the work he puts into your project. he loves adding more to the product than was originally requested for a satisfied customer.</p>
 			</div>
     	</div>
-		<div id="demo">
-        </div>
+		<div id="cart-wrap">
+	      <div id="cart-products"></div>
+	      <div id="cart-items"></div>
+	    </div>
         <script>
             
 /*            fetch("https://openlibrary.org/isbn/9780590353403")
