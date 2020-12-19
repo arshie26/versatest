@@ -34,6 +34,46 @@ ul > li{
 	background-size: 100%;	
 }
 
+.photography{
+	background-image:url('inception-8-fit.jpg');
+	background-size: 100%;	
+}
+
+@media screen and (max-device-width: 400px){
+	.book-wrapper{
+		padding:25vw;
+	}
+
+	.fiction{
+		
+	}
+
+	.nonf{
+		
+	}
+	.cover{
+		width: 50vw;
+	}
+}
+
+@media screen and (min-device-width: 1000px){
+	.book-wrapper{
+		display:flex;
+	}
+
+	.fiction{
+		min-width:40vw; max-width: 50vw; padding-left: 10vw;
+	}
+
+	.nonf{
+		min-width:30vw; max-width: 50vw;padding-left: 10vw;
+	}	
+}
+
+
+
+
+
 a{
 	color:white;
 }
