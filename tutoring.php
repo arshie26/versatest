@@ -16,12 +16,12 @@
 				</ul>
 			</center>
 		</div>
+		<div id="cart-items"></div>
 		<div>
 			<video style="width:80%; padding:10vw;" controls><source src="Let's Tutor_1.mp4" type="video/mp4">
 		</div>
-		<div id="cart-wrap">
+		<div id="cart-wrap" style="margin-left:40vw;">
 	      <div id="tutoring-products"></div>
-	      <div id="cart-items"></div>
 	    </div>
 	</body>
 </html>

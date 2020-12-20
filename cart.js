@@ -13,7 +13,7 @@ var cart = {
   // PRODUCT ID => DATA
   products : {
     123: {
-      name : "MokBook Ground",
+      name : "Photography",
       desc : "Greatest properly off ham exercise all.",
       img : "smiley-1.png",
       price : 2034
@@ -25,7 +25,7 @@ var cart = {
       price : 1247
     },
     125: {
-      name : "iPong Max",
+      name : "Coding",
       desc : "All difficulty estimating unreserved increasing the solicitude.",
       img : "smiley-3.png",
       price : 675
@@ -86,10 +86,10 @@ var cart = {
       }
 
       // PRODUCT IMAGE
-      part = document.createElement("img");
+      /*part = document.createElement("img");
       part.src = p.img;
       part.classList.add("p-img");
-      item.appendChild(part);
+      item.appendChild(part);*/
 
       // PRODUCT NAME
       part = document.createElement("div");
@@ -129,7 +129,7 @@ var cart = {
   // (D) LIST CURRENT CART ITEMS (IN HTML)
   list : function () {
     // (D1) RESET
-    cart.hItems.innerHTML = "";
+    //cart.hItems.innerHTML = "";
     let item, part, pdt;
     let empty = true;
     for (let key in cart.items) {

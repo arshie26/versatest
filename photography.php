@@ -6,7 +6,7 @@
 		<script src="cart.js"></script>
 		<script src="splide.min.js"></script>
 	</head>
-	<body>
+	<body class="photography">
 		<div>
 			<center>
 				<h1><a href="versatest.php">Arsh Agarwal</a></h1>
@@ -18,29 +18,28 @@
 				</ul>
 			</center>
 		</div>
-
+		<div id="cart-items"></div>
 		<div id="image-slider" class="splide">
 			<div class="splide__track">
 				<ul class="splide__list">
 					<li class="splide__slide">
-						<img style="width:50%" src="greendrinks.jpg"></li>
+						<img class="photo" src="greendrinks.jpg"></li>
 					</li>
 					<li class="splide__slide">
-						<img style="width:50%" src="meher.jpg">
+						<img class="photo" src="meher.jpg">
 					</li>
 					<li class="splide__slide">
-						<img style="width:50%" src="IMG_4978.jpg">
+						<img class="photo" style="width:25%;" src="IMG_4978.jpg">
 					</li>
 					<li class="splide__slide">
-						<img style="width:50%" src="bollywood.jpg">
+						<img class="photo" src="bollywood.jpg">
 					</li>
 				</ul>
 			</div>
 		</div>
 		</div>
-		<div id="cart-wrap">
+		<div id="cart-wrap" style="padding-left: 40vw;">
 	      <div id="photography-products"></div>
-	      <div id="cart-items"></div>
 	    </div>
 		<br>
 	    <div id="quote">
