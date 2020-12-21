@@ -7,17 +7,20 @@
     <body class="home">
     	<navbar>
     		<center>
-		    	<h1>
-		    		<a href="versatest.php">Arsh Agarwal</a>
-		    	</h1>
 		    	<ul>
-		    		<li><a href="coding.php">Coding</a></li>
-		    		<li><a href="photography.php">Photography</a></li>
-		    		<li><a href="tutoring.php">Tutoring</a></li>
-	                <li><a href="books.php">Book List</a></li>
+		    		<li>
+		    			<a href="versatest.php"><h1>ARSH AGARWAL</h1></a>
+		    		</li>
+		    	</ul>
+		    	<ul>
+		    		<li><a class="navbar" href="coding.php"><h3>CODING</h3></a></li>
+		    		<li><a class="navbar" href="photography.php"><h3>PHOTOGRAPHY</h3></a></li>
+		    		<li><a class="navbar" href="tutoring.php"><h3>TUTORING</h3></a></li>
+	                <li><a class="navbar" href="books.php"><h3>BOOK LIST</h3></a></li>
 		    	</ul>	
 		    </center>
     	</navbar>
+    	<div id="cart-items"></div>
     	<center>
 	    	<h2>The Arsh Advantage</h2>
     	</center>
@@ -37,7 +40,6 @@
     	</div>
 		<div id="cart-wrap">
 	      <div id="cart-products"></div>
-	      <div id="cart-items"></div>
 	    </div>
         <script>
             

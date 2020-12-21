@@ -7,12 +7,16 @@
 	<body class="coding">
 		<div>
 			<center>
-				<h1><a href="versatest.php">Arsh Agarwal</a></h1>
+						    	<ul>
+		    		<li>
+		    			<a href="versatest.php"><h1>ARSH AGARWAL</h1></a>
+		    		</li>
+		    	</ul>
 				<ul>
-					<li><a href="coding.php">Coding</a></li>
-					<li><a href="photography.php">Photography</a></li>
-					<li><a href="tutoring.php">Tutoring</a></li>
-					<li><a href="books.php">Book List</a></li>
+					<li><a class="navbar" href="coding.php">Coding</a></li>
+					<li><a class="navbar" href="photography.php">Photography</a></li>
+					<li><a class="navbar" href="tutoring.php">Tutoring</a></li>
+					<li><a class="navbar" href="books.php">Book List</a></li>
 				</ul>
 			</center>
 		</div>

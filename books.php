@@ -17,6 +17,7 @@
 	    	</ul>	
 	    </center>	
 	</navbar>
+	<div id="cart-items"></div>
 	<div class="book-wrapper">
 		<div class="fiction" >
 				Fiction

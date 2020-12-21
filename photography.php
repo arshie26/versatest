@@ -11,10 +11,10 @@
 			<center>
 				<h1><a href="versatest.php">Arsh Agarwal</a></h1>
 				<ul>
-					<li><a href="coding.php">Coding</a></li>
-					<li><a href="photography.php">Photography</a></li>
-					<li><a href="tutoring.php">Tutoring</a></li>
-					<li><a href="books.php">Book List</a></li>
+					<li><a class="navbar" href="coding.php">Coding</a></li>
+					<li><a class="navbar" href="photography.php">Photography</a></li>
+					<li><a class="navbar" href="tutoring.php">Tutoring</a></li>
+					<li><a class="navbar" href="books.php">Book List</a></li>
 				</ul>
 			</center>
 		</div>
@@ -29,10 +29,34 @@
 						<img class="photo" src="meher.jpg">
 					</li>
 					<li class="splide__slide">
-						<img class="photo" style="width:25%;" src="IMG_4978.jpg">
+						<img class="photo portrait" src="IMG_4978.jpg">
 					</li>
 					<li class="splide__slide">
 						<img class="photo" src="bollywood.jpg">
+					</li>
+					<li class="splide__slide">
+						<img class="photo portrait" src="Brasch workshop2.jpg">
+					</li>
+					<li class="splide__slide">
+						<img class="photo" src="Brash workshop 1.jpg">
+					</li>
+					<li class="splide__slide">
+						<img class="photo" src="dunnie.jpg">
+					</li>
+					<li class="splide__slide">
+						<img class="photo portrait" src="emerald.jpg">
+					</li>
+					<li class="splide__slide">
+						<img class="photo" src="greendrinks2.jpg">
+					</li>
+					<li class="splide__slide">
+						<img class="photo" src="greendrinks3.jpg">
+					</li>
+					<li class="splide__slide">
+						<img class="photo portrait" src="IMG_0204.jpg">
+					</li>
+					<li class="splide__slide">
+						<img class="photo portrait" src="sanjanalighting.jpg">
 					</li>
 				</ul>
 			</div>
