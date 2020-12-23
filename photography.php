@@ -8,17 +8,23 @@
 	</head>
 	<body class="photography">
 		<div>
-			<center>
-				<h1><a href="versatest.php">Arsh Agarwal</a></h1>
-				<ul>
-					<li><a class="navbar" href="coding.php">Coding</a></li>
-					<li><a class="navbar" href="photography.php">Photography</a></li>
-					<li><a class="navbar" href="tutoring.php">Tutoring</a></li>
-					<li><a class="navbar" href="books.php">Book List</a></li>
-				</ul>
-			</center>
+    		<center>
+		    	<ul>
+		    		<li>
+		    			<a href="versatest.php"><h1>ARSH AGARWAL</h1></a>
+		    		</li>
+		    	</ul>
+		    	<ul>
+		    		<li><a class="navbar" href="coding.php"><h3>CODING</h3></a></li>
+		    		<li><a class="navbar" href="photography.php"><h3>PHOTOGRAPHY</h3></a></li>
+		    		<li><a class="navbar" href="tutoring.php"><h3>TUTORING</h3></a></li>
+	                <li><a class="navbar" href="books.php"><h3>BOOK LIST</h3></a></li>
+		    	</ul>	
+		    </center>
 		</div>
 		<div id="cart-items"></div>
+	    <div id="quote">
+	    </div>
 		<div id="image-slider" class="splide">
 			<div class="splide__track">
 				<ul class="splide__list">
@@ -66,13 +72,18 @@
 	      <div id="photography-products"></div>
 	    </div>
 		<br>
-	    <div id="quote">
-	    </div>
 	    <script>
 	    	fetch("https://api.quotable.io/random")
 	    		.then((response) => response.json())
 	    		.then(function (data) {
-	    			document.getElementById("quote").innerHTML = data.content;
+	    			var quote = document.createElement("p");
+	    			quote.className = "quote";
+	    			var author = document.createElement("p");
+	    			author.className = "quote";
+	    			quote.innerHTML = "\"" + data.content + "\"";
+	    			author.innerHTML = data.author;
+	    			document.getElementById("quote").appendChild(quote);
+	    			document.getElementById("quote").appendChild(author);
 	    		})
 	    		.catch(function(error){
 	    			console.log(error);

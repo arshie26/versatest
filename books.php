@@ -6,14 +6,16 @@
 <body class="books">
 	<navbar>
 		<center>
-	    	<h1>
-	    		<a href="versatest.php">Arsh Agarwal</a>
-	    	</h1>
 	    	<ul>
-	    		<li><a href="coding.php">Coding</a></li>
-	    		<li><a href="photography.php">Photography</a></li>
-	    		<li><a href="tutoring.php">Tutoring</a></li>
-	            <li><a href="books.php">Book List</a></li>
+	    		<li>
+	    			<a href="versatest.php"><h1>ARSH AGARWAL</h1></a>
+	    		</li>
+	    	</ul>
+	    	<ul>
+	    		<li><a class="navbar" href="coding.php"><h3>CODING</h3></a></li>
+	    		<li><a class="navbar" href="photography.php"><h3>PHOTOGRAPHY</h3></a></li>
+	    		<li><a class="navbar" href="tutoring.php"><h3>TUTORING</h3></a></li>
+                <li><a class="navbar" href="books.php"><h3>BOOK LIST</h3></a></li>
 	    	</ul>	
 	    </center>	
 	</navbar>
@@ -35,11 +37,11 @@
 			<div id="0071401946"></div>
 			<div id="9780449203651"></div>
 			<div id="9781416549710"></div>
-			<div id="9781591842804"></div>
+			<div id="0066620996"></div>
 		</div>
 	</div>
 	<script>
-            var bookList = ["9780590353403","9780439064873","9780439136365"," 9780439139601","9780439358071","9780439785969","9780545139700"]
+            var bookList = ["9780590353403","9780439064873","9780439136365","9780439139601","9780439358071","9780439785969","9780545139700"]
             var promiseList = [];
             for(var i = 0; i < bookList.length; i++){
             	var proxy = 'https://cors-anywhere.herokuapp.com/';
@@ -80,7 +82,7 @@
 	            	}));	
             }
 
-            var nfbookList = ["9780743269513","0071401946","9780449203651","9781416549710","9781591842804"]
+            var nfbookList = ["9780743269513","0071401946","9780449203651","9781416549710","0066620996"]
 			for(var i = 0; i < nfbookList.length; i++){
             	var proxy = 'https://cors-anywhere.herokuapp.com/';
             	var url = proxy + "http://openlibrary.org/api/books?bibkeys=ISBN:"+nfbookList[i]+"&format=json&jscmd=data";
@@ -110,6 +112,7 @@
 			            bookCoverElem.className = "cover";
 			            var titleElem = document.createElement("p");
 			            titleElem.innerHTML = data[isbn].title;
+			            console.log(data[isbn].title);
 			            bookCoverElem.setAttribute("src", data[isbn].cover.medium);
 	            		document.getElementById(isbn.substring(5)).appendChild(titleElem);
 	            		document.getElementById(isbn.substring(5)).appendChild(bookCoverElem);
