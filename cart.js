@@ -14,19 +14,19 @@ var cart = {
   products : {
     123: {
       name : "Photography",
-      desc : "Greatest properly off ham exercise all.",
+      desc : "You won't remember the lens, but you will remember the moment.",
       img : "smiley-1.png",
       price : 2034
     },
     124: {
       name : "Tutoring",
-      desc : "Unsatiable invitation its possession nor off.",
+      desc : "Let's chip away at your frustration as I guide you step by step.",
       img : "smiley-2.png",
       price : 1247
     },
     125: {
       name : "Coding",
-      desc : "All difficulty estimating unreserved increasing the solicitude.",
+      desc : "We'll work through your requirements to craft the custom job right for you.",
       img : "smiley-3.png",
       price : 675
     },
@@ -84,6 +84,9 @@ var cart = {
       else if(p.name === "Photography" && cart.photographyPdt != null){
           cart.photographyPdt.appendChild(item);   
       }
+      else if(p.name === "Coding" && cart.codingPdt != null){
+          cart.codingPdt.appendChild(item);
+      }
 
       // PRODUCT IMAGE
       /*part = document.createElement("img");
@@ -129,7 +132,7 @@ var cart = {
   // (D) LIST CURRENT CART ITEMS (IN HTML)
   list : function () {
     // (D1) RESET
-    //cart.hItems.innerHTML = "";
+    cart.hItems.innerHTML = "";
     let item, part, pdt;
     let empty = true;
     for (let key in cart.items) {

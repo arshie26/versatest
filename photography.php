@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="splide.min.css">
 		<script src="cart.js"></script>
 		<script src="splide.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 	</head>
 	<body class="photography">
 		<div>
@@ -24,6 +25,8 @@
 		</div>
 		<div id="cart-items"></div>
 	    <div id="quote">
+	    	{{quote}}
+	    	{{author}}
 	    </div>
 		<div id="image-slider" class="splide">
 			<div class="splide__track">
@@ -82,8 +85,13 @@
 	    			author.className = "quote";
 	    			quote.innerHTML = "\"" + data.content + "\"";
 	    			author.innerHTML = data.author;
-	    			document.getElementById("quote").appendChild(quote);
-	    			document.getElementById("quote").appendChild(author);
+	    			var quoteElem = new Vue({
+						el: "#quote",
+						data:{
+							author: "-" + data.author,
+							quote: "\"" + data.content + "\""
+						}
+					})
 	    		})
 	    		.catch(function(error){
 	    			console.log(error);
@@ -91,6 +99,8 @@
 	    		document.addEventListener( 'DOMContentLoaded', function () {
 					new Splide( '#image-slider' ).mount();
 				} );
+
+
 	    </script>
 	</body>
 </html>
