@@ -22,7 +22,7 @@
 	<div id="cart-items"></div>
 	<div class="book-wrapper">
 		<div class="fiction" >
-				Fiction
+				<h2>Fiction</h2><br><br>
 			<div id="9780590353403"></div>
 			<div id="9780439064873"></div>
 			<div id="9780439136365"></div>
@@ -32,7 +32,7 @@
 			<div id="9780545139700"></div>
 		</div>
 		<div class="nonf" >
-				Non Fiction
+				<br><br><br><h2>Non Fiction</h2><br><br><br>
 			<div id="9780743269513"></div>
 			<div id="0071401946"></div>
 			<div id="9780449203651"></div>
@@ -56,8 +56,9 @@
 			            var titleElem = document.createElement("p");
 			            titleElem.innerHTML = data[isbn].title;
 			            bookCoverElem.setAttribute("src", data[isbn].cover.medium);
+			            document.getElementById(isbn.substring(5)).appendChild(bookCoverElem);
 	            		document.getElementById(isbn.substring(5)).appendChild(titleElem);
-	            		document.getElementById(isbn.substring(5)).appendChild(bookCoverElem);
+	            		document.getElementById(isbn.substring(5)).className = "book";
 	            	}));	
             }
 
@@ -76,8 +77,9 @@
 			            titleElem.innerHTML = data[isbn].title;
 			            console.log(data[isbn].title);
 			            bookCoverElem.setAttribute("src", data[isbn].cover.medium);
+			            document.getElementById(isbn.substring(5)).appendChild(bookCoverElem);
 	            		document.getElementById(isbn.substring(5)).appendChild(titleElem);
-	            		document.getElementById(isbn.substring(5)).appendChild(bookCoverElem);
+	            		document.getElementById(isbn.substring(5)).className = "book";
 	            	}));	
             }            
 /*            fetch("https://openlibrary.org/isbn/9780590353403")
