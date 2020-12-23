@@ -232,3 +232,30 @@ h2{
 
 
 }
+
+#advice{
+	text-align: center;
+	font-family: Gotham-Black;
+	color: white;
+	background-color: rgb(141,161,163);
+	width:max-content;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:20px;
+	margin-bottom: 40px;
+	padding:10px;
+	border-radius: 10px;
+}
+
+#adviceButton{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+button{
+	border-radius: 10px;
+	font-family: Gotham-Black;
+	padding:10px;
+	color:white;
+	background-color: rgb(201,1,3);
+}

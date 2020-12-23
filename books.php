@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" href="site.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body class="books">
 	<navbar>
@@ -20,6 +21,12 @@
 	    </center>	
 	</navbar>
 	<div id="cart-items"></div>
+	<div id = "adviceButton"  >
+		<button onclick="getAdvice()">Get Life Advice!</button>
+	</div>
+	<div id="advice">
+		Click above for life advice
+	</div>
 	<div class="book-wrapper">
 		<div class="fiction" >
 				<h2>Fiction</h2><br><br>
@@ -81,12 +88,35 @@
 	            		document.getElementById(isbn.substring(5)).appendChild(titleElem);
 	            		document.getElementById(isbn.substring(5)).className = "book";
 	            	}));	
-            }            
-/*            fetch("https://openlibrary.org/isbn/9780590353403")
-            	.then(function(response){
-            		redirect = response.blob();
-            	});*/
+            }
+            var adviceData;
+			var adviceVue = new Vue({
+							el: "#advice",
+							data:{
+								adviceText: "Get life advice!"
+							},
+							methods:{
+								getAdvice: function(){
+									fetch("https://api.adviceslip.com/advice")
+										.then((response) => response.json())
+										.then(function(data){
+											this.adviceText = "Life advice: " + data["slip"].advice	
+										});
+								}
+								
+							}
+						})
 
+			function getAdvice(){
+				fetch("https://api.adviceslip.com/advice")
+					.then((response) => response.json())
+					.then(function(data){
+						var advice = document.createElement("p");
+						advice.innerHTML = "Life advice: " + data["slip"].advice;
+						document.getElementById("advice").innerHTML = data["slip"].advice;	
+					});
+
+			}
 
         </script>
 <body>
