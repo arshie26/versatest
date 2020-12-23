@@ -46,28 +46,7 @@
             for(var i = 0; i < bookList.length; i++){
             	var proxy = 'https://cors-anywhere.herokuapp.com/';
 	            var url = proxy + "http://openlibrary.org/api/books?bibkeys=ISBN:"+bookList[i]+"&format=json&jscmd=data";
-            	/*var request = new XMLHttpRequest();
-	            var jsonData;
-	            var bookCoverElem = document.createElement("img");
-	            bookCoverElem.className = "cover";
-	            var titleElem = document.createElement("p");
-	            
-	            request.onreadystatechange = function(){
-	            	if(this.readyState == 4 && this.status == 200){
-	            		jsonData = JSON.parse(this.responseText);
-	            		var isbn = Object.keys(jsonData)[0];
-			            bookData = jsonData[isbn];
-			            titleElem.innerHTML = bookData.title;
-			            bookCoverElem.setAttribute("src", bookData.cover.medium);
-			            document.getElementsByClassName("fiction")[0].appendChild(titleElem);
-			            document.getElementsByClassName("fiction")[0].appendChild(bookCoverElem);
-	            	}
-	            }
-				
-	            request.open("GET", url, false);
-	            //request.setRequestHeader("Access-Control-Allow-Origin", "*")
-	            request.send();
-	            */
+            	
 	            promiseList.push(fetch(url)
 	            	.then((response) => response.json())
 	            	.then(function(data){ 
@@ -86,24 +65,7 @@
 			for(var i = 0; i < nfbookList.length; i++){
             	var proxy = 'https://cors-anywhere.herokuapp.com/';
             	var url = proxy + "http://openlibrary.org/api/books?bibkeys=ISBN:"+nfbookList[i]+"&format=json&jscmd=data";
-            	/*var request = new XMLHttpRequest();
-	            var jsonData;
-	            var bookCoverElem = document.createElement("img");
-	            bookCoverElem.className = "cover";
-	            var titleElem = document.createElement("p");
-	            request.onreadystatechange = function(){
-	            	if(this.readyState == 4 && this.status == 200){
-	            		jsonData = JSON.parse(this.responseText);
-			            bookData = jsonData["ISBN:" + nfbookList[i]];
-			            titleElem.innerHTML = bookData.title;
-			            bookCoverElem.setAttribute("src", bookData.cover.medium);
-			            document.getElementsByClassName("nonf")[0].appendChild(titleElem);
-			            document.getElementsByClassName("nonf")[0].appendChild(bookCoverElem);
-	            	}
-	            }
-	            request.open("GET", url, false);
-	            //request.setRequestHeader("Access-Control-Allow-Origin", "*")
-	            request.send();*/
+            	
 	            promiseList.push(fetch(url)
 	            	.then((response) => response.json())
 	            	.then(function(data){ 
