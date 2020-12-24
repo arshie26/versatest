@@ -223,12 +223,15 @@ h2{
 	margin:auto;
 }
 
-#verticalreport{
-	float:left;
-}
+@media screen and (min-device-width: 1000px){
+	#verticalreport{
+		float:left;
+	}
 
-#gradereport{
-	float: right;
+
+	#gradereport{
+		float: right;
+	}
 }
 
 
