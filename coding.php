@@ -26,14 +26,14 @@
 		<video style="width:80%; padding:10vw; padding-bottom:5vw;" controls><source src="igewebdev.mp4" type="video/mp4"></video>	
 		</div>
 		<div>
-			<img src="studentreport.png" style="width:80%; padding-left:10vw; padding-right:10vw;">
+			<img id="scorereport" src="studentreport.png">
 		</div>
-		<div style="padding:10vw;">
-			<img src="gradingmobile.png" style="padding-right:1vw;">
-			<img src="grading2.png" style="padding-left:1vw;">
+		<div id = "report2" style="padding:10vw;">
+			<img id = "verticalreport" src="gradingmobile.png">
+			<img id = "gradereport" src="grading2.png">
 		</div>
 		<video style="width:80%; padding:10vw;" controls><source src="datavis.mp4" type="video/mp4"></video>
-		<div id="cart-wrap" style="margin-left:40vw;">
+		<div id="cart-wrap" style="margin-bottom:20vw; text-align: center">
 	      <div id="coding-products"></div>
 	    </div>
 	</body>

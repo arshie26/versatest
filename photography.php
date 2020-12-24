@@ -12,68 +12,73 @@
     		<center>
 		    	<ul>
 		    		<li>
-		    			<a href="versatest.php"><h1>ARSH AGARWAL</h1></a>
+		    			<a href="versatest.php"><h1 class="title">ARSH AGARWAL</h1></a>
 		    		</li>
 		    	</ul>
 		    	<ul>
-		    		<li><a class="navbar" href="coding.php"><h3>CODING</h3></a></li>
-		    		<li><a class="navbar" href="photography.php"><h3>PHOTOGRAPHY</h3></a></li>
-		    		<li><a class="navbar" href="tutoring.php"><h3>TUTORING</h3></a></li>
-	                <li><a class="navbar" href="books.php"><h3>BOOK LIST</h3></a></li>
+		    		<li><a class="navbar" href="coding.php"><h3 class="navbar">CODING</h3></a></li>
+		    		<li><a class="navbar" href="photography.php"><h3 class="navbar">PHOTOGRAPHY</h3></a></li>
+		    		<li><a class="navbar" href="tutoring.php"><h3 class="navbar">TUTORING</h3></a></li>
+	                <li><a class="navbar" href="books.php"><h3 class="navbar">BOOK LIST</h3></a></li>
 		    	</ul>	
 		    </center>
 		</div>
 		<div id="cart-items"></div>
-	    <div id="quote">
-	    	{{quote}}
-	    	{{author}}
-	    </div>
-		<div id="image-slider" class="splide">
-			<div class="splide__track">
-				<ul class="splide__list">
-					<li class="splide__slide">
-						<img class="photo" src="greendrinks.jpg"></li>
-					</li>
-					<li class="splide__slide">
-						<img class="photo" src="meher.jpg">
-					</li>
-					<li class="splide__slide">
-						<img class="photo portrait" src="IMG_4978.jpg">
-					</li>
-					<li class="splide__slide">
-						<img class="photo" src="bollywood.jpg">
-					</li>
-					<li class="splide__slide">
-						<img class="photo portrait" src="Brasch workshop2.jpg">
-					</li>
-					<li class="splide__slide">
-						<img class="photo" src="Brash workshop 1.jpg">
-					</li>
-					<li class="splide__slide">
-						<img class="photo" src="dunnie.jpg">
-					</li>
-					<li class="splide__slide">
-						<img class="photo portrait" src="emerald.jpg">
-					</li>
-					<li class="splide__slide">
-						<img class="photo" src="greendrinks2.jpg">
-					</li>
-					<li class="splide__slide">
-						<img class="photo" src="greendrinks3.jpg">
-					</li>
-					<li class="splide__slide">
-						<img class="photo portrait" src="IMG_0204.jpg">
-					</li>
-					<li class="splide__slide">
-						<img class="photo portrait" src="sanjanalighting.jpg">
-					</li>
-				</ul>
+	    
+	    <div id = "rotate">
+	    	Please rotate device to view images
+		</div>
+	    <div id="show">
+	    	<div id="quote">
+		    	{{quote}}
+		    	{{author}}
+		    </div>
+			<div id="image-slider" class="splide">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide">
+							<img class="photo" src="greendrinks.jpg"></li>
+						</li>
+						<li class="splide__slide">
+							<img class="photo" src="meher.jpg">
+						</li>
+						<li class="splide__slide">
+							<img class="photo portrait" src="IMG_4978.jpg">
+						</li>
+						<li class="splide__slide">
+							<img class="photo" src="bollywood.jpg">
+						</li>
+						<li class="splide__slide">
+							<img class="photo portrait" src="Brasch workshop2.jpg">
+						</li>
+						<li class="splide__slide">
+							<img class="photo" src="Brash workshop 1.jpg">
+						</li>
+						<li class="splide__slide">
+							<img class="photo" src="dunnie.jpg">
+						</li>
+						<li class="splide__slide">
+							<img class="photo portrait" src="emerald.jpg">
+						</li>
+						<li class="splide__slide">
+							<img class="photo" src="greendrinks2.jpg">
+						</li>
+						<li class="splide__slide">
+							<img class="photo" src="greendrinks3.jpg">
+						</li>
+						<li class="splide__slide">
+							<img class="photo portrait" src="IMG_0204.jpg">
+						</li>
+						<li class="splide__slide">
+							<img class="photo portrait" src="sanjanalighting.jpg">
+						</li>
+					</ul>
+				</div>
 			</div>
+			<div id="cart-wrap" style="padding-left: 40vw;">
+		      	<div id="photography-products"></div>
+		    </div>
 		</div>
-		</div>
-		<div id="cart-wrap" style="padding-left: 40vw;">
-	      <div id="photography-products"></div>
-	    </div>
 		<br>
 	    <script>
 	    	fetch("https://api.quotable.io/random")

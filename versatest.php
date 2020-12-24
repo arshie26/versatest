@@ -3,13 +3,14 @@
     <head>
     	<link rel="stylesheet" href="site.css">
     	<script src="cart.js"></script>
+    	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     </head>
     <body class="home">
     	<navbar>
     		<center>
 		    	<ul>
 		    		<li>
-		    			<a class="title" href="versatest.php"><h1>ARSH AGARWAL</h1></a>
+		    			<a class="title" href="versatest.php"><h1 class="title">ARSH AGARWAL</h1></a>
 		    		</li>
 		    	</ul>
 		    	<ul>
