@@ -32,7 +32,7 @@
 			<p id="coding-desc">
 				The video below demonstrates typical usage of the video games and their integration with the website.  
 			</p>
-		<video style="width:80%; padding:10vw; padding-bottom:5vw;" controls><source src="igewebdev.mp4" type="video/mp4"></video>	
+		<video style="padding-top: 5vw; padding-bottom:5vw;" controls><source src="igewebdev.mp4" type="video/mp4"></video>	
 		</div>
 		<p id="coding-desc" style="margin-bottom: 20px;">
 			After the CEO gave me the design prototypes, I developed the screens below to deliver student score reports in various degrees of granularity to users of the website. I used HTML tables and a lot of styling to develop the screens and make them responsive. On mobile, each entry becomes a <a href="https://magenic.com/thinking/making-tables-responsive-for-mobile-devices">card</a>.
@@ -50,7 +50,7 @@
 		<p id="coding-desc">
 			The script takes the translation work that I have done, maps it to appropriate dance expression qualities, and synchronizes dancer video with the expression. Several visual aids, like a map of the overall analysis on top and a color scheme for expression, help to simplify the viewing experience.
 		</p>
-		<video style="width:80%; padding:10vw;" controls><source src="datavis.mp4" type="video/mp4"></video>
+		<video style="padding-top: 5vw;" controls><source src="datavis.mp4" type="video/mp4"></video>
 		<div id="cart-wrap">
 	      <div id="coding-products"></div>
 	    </div>
