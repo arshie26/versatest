@@ -21,12 +21,12 @@
 	    </center>	
 	</navbar>
 	<div id="cart-items"></div>
-	<div id = "adviceButton"  >
-		<button onclick="getAdvice()">Get Life Advice!</button>
-	</div>
+	
 	<div id="advice">
-		Click above for life advice
+		<button id = "adviceButton" v-on:click="getAdvice">Get Life Advice!</button>
+		{{adviceText}}
 	</div>
+
 	<div class="book-wrapper">
 		<div class="fiction" >
 				<h2 class="genre">Fiction</h2><br><br>
@@ -54,7 +54,7 @@
             	var proxy = 'https://cors-anywhere.herokuapp.com/';
 	            var url = proxy + "http://openlibrary.org/api/books?bibkeys=ISBN:"+bookList[i]+"&format=json&jscmd=data";
             	
-	            /*promiseList.push(fetch(url)
+	            promiseList.push(fetch(url)
 	            	.then((response) => response.json())
 	            	.then(function(data){ 
 	            		var isbn = Object.keys(data)[0];
@@ -67,7 +67,7 @@
 			            document.getElementById(isbn.substring(5)).appendChild(bookCoverElem);
 	            		document.getElementById(isbn.substring(5)).appendChild(titleElem);
 	            		document.getElementById(isbn.substring(5)).className = "book";
-	            	}));*/	
+	            	}));	
             }
 
             var nfbookList = ["9780743269513","0071401946","9780449203651","9781416549710","0066620996"]
@@ -75,7 +75,7 @@
             	var proxy = 'https://cors-anywhere.herokuapp.com/';
             	var url = proxy + "http://openlibrary.org/api/books?bibkeys=ISBN:"+nfbookList[i]+"&format=json&jscmd=data";
             	
-	            /*promiseList.push(fetch(url)
+	            promiseList.push(fetch(url)
 	            	.then((response) => response.json())
 	            	.then(function(data){ 
 	            		var isbn = Object.keys(data)[0];
@@ -89,9 +89,9 @@
 			            document.getElementById(isbn.substring(5)).appendChild(bookCoverElem);
 	            		document.getElementById(isbn.substring(5)).appendChild(titleElem);
 	            		document.getElementById(isbn.substring(5)).className = "book";
-	            	}));*/	
+	            	}));	
             }
-            /*var adviceData;
+            var adviceData;
 			var adviceVue = new Vue({
 							el: "#advice",
 							data:{
@@ -102,14 +102,16 @@
 									fetch("https://api.adviceslip.com/advice")
 										.then((response) => response.json())
 										.then(function(data){
-											this.adviceText = "Life advice: " + data["slip"].advice	
-										});
+											adviceVue.adviceText = "Life advice: " + data["slip"].advice	
+										}).catch(error => {
+											console.log(error)
+										})
 								}
 								
 							}
-						})*/
+						})
 
-			function getAdvice(){
+			/*function getAdvice(){
 				fetch("https://api.adviceslip.com/advice")
 					.then((response) => response.json())
 					.then(function(data){
@@ -118,7 +120,7 @@
 						document.getElementById("advice").innerHTML = data["slip"].advice;	
 					});
 
-			}
+			}*/
 
         </script>
 <body>
