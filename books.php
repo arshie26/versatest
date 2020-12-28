@@ -54,7 +54,7 @@
             	var proxy = 'https://cors-anywhere.herokuapp.com/';
 	            var url = proxy + "http://openlibrary.org/api/books?bibkeys=ISBN:"+bookList[i]+"&format=json&jscmd=data";
             	
-	            promiseList.push(fetch(url)
+	            /*promiseList.push(fetch(url)
 	            	.then((response) => response.json())
 	            	.then(function(data){ 
 	            		var isbn = Object.keys(data)[0];
@@ -67,7 +67,7 @@
 			            document.getElementById(isbn.substring(5)).appendChild(bookCoverElem);
 	            		document.getElementById(isbn.substring(5)).appendChild(titleElem);
 	            		document.getElementById(isbn.substring(5)).className = "book";
-	            	}));	
+	            	}));*/	
             }
 
             var nfbookList = ["9780743269513","0071401946","9780449203651","9781416549710","0066620996"]
@@ -75,7 +75,7 @@
             	var proxy = 'https://cors-anywhere.herokuapp.com/';
             	var url = proxy + "http://openlibrary.org/api/books?bibkeys=ISBN:"+nfbookList[i]+"&format=json&jscmd=data";
             	
-	            promiseList.push(fetch(url)
+	            /*promiseList.push(fetch(url)
 	            	.then((response) => response.json())
 	            	.then(function(data){ 
 	            		var isbn = Object.keys(data)[0];
@@ -89,9 +89,8 @@
 			            document.getElementById(isbn.substring(5)).appendChild(bookCoverElem);
 	            		document.getElementById(isbn.substring(5)).appendChild(titleElem);
 	            		document.getElementById(isbn.substring(5)).className = "book";
-	            	}));	
+	            	}));*/	
             }
-            var adviceData;
 			var adviceVue = new Vue({
 							el: "#advice",
 							data:{
@@ -110,17 +109,6 @@
 								
 							}
 						})
-
-			/*function getAdvice(){
-				fetch("https://api.adviceslip.com/advice")
-					.then((response) => response.json())
-					.then(function(data){
-						var advice = document.createElement("p");
-						advice.innerHTML = "Life advice: " + data["slip"].advice;
-						document.getElementById("advice").innerHTML = data["slip"].advice;	
-					});
-
-			}*/
 
         </script>
 <body>
