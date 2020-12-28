@@ -229,7 +229,6 @@ h2{
 
 @media screen and (min-device-width: 1000px){
 	#verticalreport{
-		float:left;
 	}
 
 
@@ -276,6 +275,23 @@ h2{
 	min-width: 33vw;
 	max-width: 33vw;
 	font-family: Gotham-Black;
+}
+
+#coding-desc{
+	background-color: rgb(213,183,152);
+	min-width: 80vw;
+	max-width: 80vw;
+	font-family: Gotham-Black;
+	margin:auto;
+	color:white;
+	padding: 10px;
+	border-radius: 10px;	
+}
+
+@media screen and (max-device-width: 400px){
+	#coding-desc{
+		font-size: 3em;
+	}
 }
 
 #cart-items, #cart-wrap{
