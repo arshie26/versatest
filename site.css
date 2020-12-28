@@ -57,6 +57,10 @@ ul > li{
 	background-size: 100%;
 }
 
+#rotate{
+	display: none;
+}
+
 @media screen and (max-device-width: 400px) and (orientation:portrait){
 
 	#show{

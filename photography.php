@@ -7,6 +7,7 @@
 		<script src="splide.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	</head>
 	<body class="photography">
 		<div>
@@ -30,6 +31,10 @@
 	    	Please rotate device to view images
 		</div>
 	    <div id="show">
+	    	<div id="quote" class="animated fadeInDown">
+		    	{{quote}}
+		    	{{author}}
+		    </div>
 			<div id="image-slider" class="splide">
 				<div class="splide__track">
 					<ul class="splide__list">
@@ -72,10 +77,11 @@
 					</ul>
 				</div>
 			</div>
-			<div id="quote" class="aos-init aos-animate" data-aos="slide-left" data-aos-delay="300" >
+			
+			<!--div id="quote" class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
 		    	{{quote}}
 		    	{{author}}
-		    </div>
+		    </div-->
 			<div id="cart-wrap">
 		      	<div id="photography-products"></div>
 		    </div>
@@ -105,12 +111,10 @@
 	    		document.addEventListener( 'DOMContentLoaded', function () {
 					new Splide( '#image-slider' ).mount();
 				} );
-
-
+    		document.addEventListener('DOMContentLoaded', function(){
+		  		AOS.init();
+	  		});
 	    </script>
       	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	  <script>
-	    AOS.init();
-	  </script>
 	</body>
 </html>
