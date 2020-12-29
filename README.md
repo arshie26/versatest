@@ -33,7 +33,7 @@ The book list page has a card layout. I originally coded this in a 2 column layo
 The photography page has a sliding gallery layout. This puts my work front and center and allows the user to navigate it easily
 	
 
-##Javascript
+## Javascript
 	
 My intent was to use Javascript for functionality and to make the code clean for reading and easily readable. I use Javascript for asynchronous calls to 3 different APIs. At first, I was using XHRs to retrieve the data, but I switched to fetch. It's more modern, I think more APIs support it, and it seems easier to read once you get the hang of it.
 	
@@ -41,11 +41,11 @@ Where I call these APIs, I use Vue JS objects and directives to integrate the da
 	
 I use a simple cart library implemented in JS for a cart that works around the website. There are 3 possible products that you can add to the cart: photography, tutoring, and coding. Each product is shown on the respective page, and the cart is shown across the website, with the option to empty the cart and change quantity of items shown on every page.
 
-##Public APIs
+## Public APIs
 
 I implement the Quotable Quotes API, the OpenLibrary API, and the Advice Slip APIs. I attempted to use the Photoshop, Flickr, Paypal APIs. I got stuck at the authentication part for each of these APIs, so for the time being, I decided to use APIs that do not require authentication to demonstrate that once I am able to clear the mechanics of authentication, I would be able to use any API we need to use. I am currently using a proxy to get around CORS, but I would like to implement a cleaner solution.
 
-##Responsive design
+## Responsive design
 
 To make the website responsive, the CSS currently supports screen sizes greater than 1000 px wide and less than 400 px wide. The content on each page has been customized for the viewing experiences on desktops, laptops, and mobile phones.
 	
