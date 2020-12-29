@@ -1,10 +1,9 @@
 # versatest
 
-My intention for the website was to create a rough portfolio website for myself. I've had the structure in mind for some time, and I thought this assessment would be a good opportunity to implement it. I had a very clear image for the heading of the landing page, which I eventually made the navigation bar. I knew I wanted it to reflect my experience in various fields, like so:
+My intention for the website was to create a rough portfolio website for myself. I've had the structure in mind for some time, and I thought this assessment would be the perfect opportunity to implement it. I had a very clear image for the heading of the landing page, which I eventually made the navigation bar. I knew I wanted it to reflect my experience in various fields, like so:
 
-				Arsh Agarwal
-
-Photography | Cinematography | Editing | Tutoring | Coding
+							Arsh Agarwal
+	Photography | Cinematography | Editing | Tutoring | Coding
 
 In the interest of time and simplicity and to facilitate the use of Public APIs, I left out the Cinematography and Editing sections and put in a Book List section. I knew I wanted to make the landing page dramatic as well, with a dark background lit theatrically, but I knew that would probably be too complex for the current implementation.
 
@@ -39,11 +38,19 @@ My intent was to use Javascript for functionality and to make the code clean for
 	
 Where I call these APIs, I use Vue JS objects and directives to integrate the data received into the HTML. I was previously using vanilla JS to direct the integration of this data into the DOM, but Angular code looked cleaner to me and easier to read.
 	
+## Get Life Advice Button
+I create an adviceVue app that is attached to the advice element in the DOM. The app has default text to display on page load. In the DOM, the button has a directive such that when it's clicked, the getAdvice method is called. This method calls the Advice Slip API, converts the data to JSON, and sets the adviceText variable to the data just retrieved. Through text interpolation, we are able to dynamically update the DOM when the data is retrieved and whenever the button is clicked. 
+
 I use a simple cart library implemented in JS for a cart that works around the website. There are 3 possible products that you can add to the cart: photography, tutoring, and coding. Each product is shown on the respective page, and the cart is shown across the website, with the option to empty the cart and change quantity of items shown on every page.
+
+At every page, when the DOM content is loaded, the cart is initalized by retrieving cart items from local storage and listing them on the page. Each page that has a product to add has appropriate HTML that the cart script looks for to display the appropriate product.
 
 ## Public APIs
 
 I implement the Quotable Quotes API, the OpenLibrary API, and the Advice Slip APIs. I attempted to use the Photoshop, Flickr, Paypal APIs. I got stuck at the authentication part for each of these APIs, so for the time being, I decided to use APIs that do not require authentication to demonstrate that once I am able to clear the mechanics of authentication, I would be able to use any API we need to use. I am currently using a proxy to get around CORS, but I would like to implement a cleaner solution.
+
+### OpenLibrary API
+I store these 
 
 ## Responsive design
 
