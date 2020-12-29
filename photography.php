@@ -39,40 +39,40 @@
 				<div class="splide__track">
 					<ul class="splide__list">
 						<li class="splide__slide">
-							<img class="photo" src="greendrinks.jpg"></li>
+							<img class="photo" src="greendrinks.JPG"></li>
 						</li>
 						<li class="splide__slide">
-							<img class="photo" src="meher.jpg">
+							<img class="photo" src="meher.JPG">
 						</li>
 						<li class="splide__slide">
-							<img class="photo portrait" src="IMG_4978.jpg">
+							<img class="photo portrait" src="IMG_4978.JPG">
 						</li>
 						<li class="splide__slide">
-							<img class="photo" src="bollywood.jpg">
+							<img class="photo" src="bollywood.JPG">
 						</li>
 						<li class="splide__slide">
-							<img class="photo portrait" src="Brasch workshop2.jpg">
+							<img class="photo portrait" src="Brasch workshop2.JPG">
 						</li>
 						<li class="splide__slide">
-							<img class="photo" src="Brash workshop 1.jpg">
+							<img class="photo" src="Brash workshop 1.JPG">
 						</li>
 						<li class="splide__slide">
-							<img class="photo" src="dunnie.jpg">
+							<img class="photo" src="dunnie.JPG">
 						</li>
 						<li class="splide__slide">
-							<img class="photo portrait" src="emerald.jpg">
+							<img class="photo portrait" src="emerald.JPG">
 						</li>
 						<li class="splide__slide">
-							<img class="photo" src="greendrinks2.jpg">
+							<img class="photo" src="greendrinks2.JPG">
 						</li>
 						<li class="splide__slide">
-							<img class="photo" src="greendrinks3.jpg">
+							<img class="photo" src="greendrinks3.JPG">
 						</li>
 						<li class="splide__slide">
-							<img class="photo portrait" src="IMG_0204.jpg">
+							<img class="photo portrait" src="IMG_0204.JPG">
 						</li>
 						<li class="splide__slide">
-							<img class="photo portrait" src="sanjanalighting.jpg">
+							<img class="photo portrait" src="sanjanalighting.JPG">
 						</li>
 					</ul>
 				</div>
