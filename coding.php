@@ -38,11 +38,11 @@
 			After the CEO gave me the design prototypes, I developed the screens below to deliver student score reports in various degrees of granularity to users of the website. I used HTML tables and a lot of styling to develop the screens and make them responsive. On mobile, each entry becomes a <a href="https://magenic.com/thinking/making-tables-responsive-for-mobile-devices">card</a>.
 		</p>
 		<div>
-			<img id="scorereport" src="studentreport.png">
+			<img id="scorereport" src="studentreport.PNG">
 		</div>
 		<div id = "report2" style="padding:10vw;">
-			<img id = "verticalreport" src="gradingmobile.png">
-			<img id = "gradereport" src="grading2.png">
+			<img id = "verticalreport" src="gradingmobile.PNG">
+			<img id = "gradereport" src="grading2.PNG">
 		</div>
 		<p id = "coding-desc">
 			At the University of Houston, I worked with dancers and engineers to translate dance into an engineering language to facilitate experiments to discover how dance and expression are encoded in the brain. I particularly enjoyed the opportunity to translate different fields of academia as I collaborated with dancers and engineers. As part of my work, I created a data visualization script in Matlab to facilitate the translation.
