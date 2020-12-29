@@ -11,10 +11,10 @@ In the interest of time and simplicity and to facilitate the use of Public APIs,
 Theme is very important for a website, because it needs to be aligned with the brand and facilitate the user experience. Similarly to Instagram, if you don't have a great theme, the user will not be immersed in the brand. If they're not immersed, they won't have a quality brand experience, and you want to make certain that the user has a positive brand experience and associates the website with the brand. I'm very much about achieving goals and dreams, making fantasy a reality, and deep philosphical and analytical thought. Inception is one of my favorite movies. Thus, I themed the website with Inception. I searched online for the Inception color palette and font to use on the website and implemented it here. I've done my best to incorporate the inception theme in all elements of the website, from the text boxes to the title to the backgrounds.
  
 
-##Setup
-	I began developing the website as local files that my browser could open. When I began running into trouble with CORS, I began to use XAMPP to run this on a local server. Though this did not help, I knew it would be better to stick to this approach. The websites I will be developing will not be stored on a local machine. Because they're hosted on an XAMPP server, the files are PHP instead of HTML.
+## Setup
+I began developing the website as local files that my browser could open. When I began running into trouble with CORS, I began to use XAMPP to run this on a local server. Though this did not help, I knew it would be better to stick to this approach. The websites I will be developing will not be stored on a local machine. Because they're hosted on an XAMPP server, the files are PHP instead of HTML.
 
-##Different layouts
+## Different layouts
 	
 I knew it would be important to work with multiple types of layouts, so I tried to see what layouts would facilitate the user's experience consuming the content on each page
 
