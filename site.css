@@ -277,7 +277,7 @@ h2{
 	font-family: Gotham-Black;
 }
 
-#coding-desc{
+.coding-desc{
 	background-color: rgb(213,183,152);
 	min-width: 80vw;
 	max-width: 80vw;
@@ -418,3 +418,7 @@ button{
 	}
 }
 
+video{
+	width:80%; 
+	padding:10vw;
+}
