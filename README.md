@@ -16,9 +16,9 @@ Setup
 
 Different layouts
 	
-	I knew it would be important to work with multiple types of layouts, so I tried to see what layouts would facilitate the user's experience consuming the content on each page
+I knew it would be important to work with multiple types of layouts, so I tried to see what layouts would facilitate the user's experience consuming the content on each page
 
-	The navigation bar is similar across pages, because every page needs a thematic element that stays consistent across the pages.
+The navigation bar is similar across pages, because every page needs a thematic element that stays consistent across the pages.
 	
 	The home page has a product layout with features listed across the page
 		Many product landing pages are structured in this way, so I used this layout to communicate my strengths.
